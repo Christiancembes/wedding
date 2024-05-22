@@ -1,7 +1,8 @@
 :root {
+  --gold: #f5f3f058;
   --pink: #f14e95;
   --bg: #0a0a0a;
-  --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero::before {
@@ -11,18 +12,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/wedding6.jpg);
+  background-image: url(img/gallery/wedding4-png.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   z-index: -1;
-  filter: grayscale();
 }
 
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 2000px;
+  min-height: 4000px;
 }
 
 .hero {
+  position: relative;
   min-height: 100vh;
 }
 
@@ -47,17 +51,1437 @@ body {
 
 .hero a {
   margin-top: 3rem;
-  color: var(--pink);
+  color: var(--bg);
   background-color: white;
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: var(--pink);
+  background-color: var(--shadow);
   color: white;
 }
 
+.simply-countdown > .simply-section {
+  padding: 70px;
+  background: var(--gold);
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.934) !important;
+  backdrop-filter: 4px;
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url(img/background-home.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6.7rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.gifts h2 {
+  color: #000000;
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.home h2 {
+  text-shadow: var(--shadow);
+  font-family: "Sacramento", cursive;
+  font-size: 6rem;
+  color: #e9e0e6;
+}
+
+.home h3 {
+  color: #e9e0e6;
+  text-shadow: var(--shadow);
+  font-size: 2rem !important;
+  margin-bottom: 1rem;
+  font: bold;
+}
+
+.home h1 {
+  color: #e9e0e6;
+  text-shadow: var(--shadow);
+  font-size: 1.2rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: var(--shadow);
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: "Sacramento";
+  font-size: 2.4rem;
+  color: white;
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+
+.home .container .card {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(57deg, #0a0a0a, #000000);
+  margin: auto;
+}
+.home .container .card::before {
+  container: "";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(57deg, #0a0a0a, #e9e0e6);
+  filter: blur(50px);
+}
+.home .container .card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .container .card span {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+.home .container .card span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home h3 p {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.info {
+  background-color: var(--bg);
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.info h2 {
+  color: #e9e0e6;
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.story,
+.gallery,
+.rsvp,
+.gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  display: block;
+}
+
+.story span,
+.gallery span,
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.story h2 {
+  color: var(--bg);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+.gallery {
+  background-color: #e9e0e6;
+}
+.gallery h2 {
+  color: var(--bg);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.rsvp {
+  background-color: var(--bg);
+}
+
+.rsvp h2 {
+  color: #fff;
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.rsvp p {
+  color: white;
+}
+
+.rsvp form label {
+  color: white;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid white;
+}
+
+footer {
+  padding: 3rem;
+  background-color: #4d1c04f3;
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: whitesmoke;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* snowfall animation */
+.flake {
+  background-color: #fff;
+  border-radius: 100%;
+  position: absolute;
+  top: -10vh;
+  padding: 1vw;
+}
+.flake:nth-child(1) {
+  animation: snow 19s linear 40s infinite normal backwards;
+  left: 79%;
+  opacity: 0.71;
+  padding: 0.11vw;
+}
+.flake:nth-child(2) {
+  animation: snow 19s linear 10s infinite normal backwards;
+  left: 57%;
+  opacity: 1.1;
+  padding: 0.34vw;
+}
+.flake:nth-child(3) {
+  animation: snow 14s linear 15s infinite normal backwards;
+  left: 5%;
+  opacity: 0.82;
+  padding: 0.12vw;
+}
+.flake:nth-child(4) {
+  animation: snow 14s linear 30s infinite normal backwards;
+  left: 95%;
+  opacity: 0.32;
+  padding: 0.28vw;
+}
+.flake:nth-child(5) {
+  animation: snow 12s linear 8s infinite normal backwards;
+  left: 54%;
+  opacity: 0.48;
+  padding: 0.41vw;
+}
+.flake:nth-child(6) {
+  animation: snow 16s linear 30s infinite normal backwards;
+  left: 20%;
+  opacity: 0.64;
+  padding: 0.28vw;
+}
+.flake:nth-child(7) {
+  animation: snow 12s linear 36s infinite normal backwards;
+  left: 20%;
+  opacity: 0.28;
+  padding: 0.34vw;
+}
+.flake:nth-child(8) {
+  animation: snow 13s linear 3s infinite normal backwards;
+  left: 62%;
+  opacity: 0.55;
+  padding: 0.14vw;
+}
+.flake:nth-child(9) {
+  animation: snow 18s linear 44s infinite normal backwards;
+  left: 65%;
+  opacity: 0.6;
+  padding: 0.32vw;
+}
+.flake:nth-child(10) {
+  animation: snow 16s linear 32s infinite normal backwards;
+  left: 90%;
+  opacity: 0.55;
+  padding: 0.18vw;
+}
+.flake:nth-child(11) {
+  animation: snow 14s linear 50s infinite normal backwards;
+  left: 6%;
+  opacity: 0.98;
+  padding: 0.39vw;
+}
+.flake:nth-child(12) {
+  animation: snow 11s linear 22s infinite normal backwards;
+  left: 93%;
+  opacity: 0.51;
+  padding: 0.2vw;
+}
+.flake:nth-child(13) {
+  animation: snow 13s linear 8s infinite normal backwards;
+  left: 61%;
+  opacity: 0.21;
+  padding: 0.47vw;
+}
+.flake:nth-child(14) {
+  animation: snow 15s linear 43s infinite normal backwards;
+  left: 19%;
+  opacity: 0.46;
+  padding: 0.25vw;
+}
+.flake:nth-child(15) {
+  animation: snow 11s linear 13s infinite normal backwards;
+  left: 94%;
+  opacity: 0.83;
+  padding: 0.29vw;
+}
+.flake:nth-child(16) {
+  animation: snow 19s linear 15s infinite normal backwards;
+  left: 92%;
+  opacity: 0.83;
+  padding: 0.28vw;
+}
+.flake:nth-child(17) {
+  animation: snow 19s linear 30s infinite normal backwards;
+  left: 14%;
+  opacity: 0.3;
+  padding: 0.36vw;
+}
+.flake:nth-child(18) {
+  animation: snow 20s linear 41s infinite normal backwards;
+  left: 46%;
+  opacity: 1.07;
+  padding: 0.16vw;
+}
+.flake:nth-child(19) {
+  animation: snow 15s linear 7s infinite normal backwards;
+  left: 46%;
+  opacity: 1.03;
+  padding: 0.29vw;
+}
+.flake:nth-child(20) {
+  animation: snow 14s linear 7s infinite normal backwards;
+  left: 40%;
+  opacity: 1.08;
+  padding: 0.13vw;
+}
+.flake:nth-child(21) {
+  animation: snow 16s linear 18s infinite normal backwards;
+  left: 1%;
+  opacity: 0.29;
+  padding: 0.46vw;
+}
+.flake:nth-child(22) {
+  animation: snow 16s linear 3s infinite normal backwards;
+  left: 35%;
+  opacity: 0.64;
+  padding: 0.25vw;
+}
+.flake:nth-child(23) {
+  animation: snow 19s linear 45s infinite normal backwards;
+  left: 9%;
+  opacity: 0.39;
+  padding: 0.3vw;
+}
+.flake:nth-child(24) {
+  animation: snow 17s linear 40s infinite normal backwards;
+  left: 73%;
+  opacity: 0.4;
+  padding: 0.2vw;
+}
+.flake:nth-child(25) {
+  animation: snow 13s linear 10s infinite normal backwards;
+  left: 78%;
+  opacity: 0.4;
+  padding: 0.28vw;
+}
+.flake:nth-child(26) {
+  animation: snow 20s linear 6s infinite normal backwards;
+  left: 23%;
+  opacity: 0.77;
+  padding: 0.44vw;
+}
+.flake:nth-child(27) {
+  animation: snow 14s linear 17s infinite normal backwards;
+  left: 46%;
+  opacity: 0.36;
+  padding: 0.11vw;
+}
+.flake:nth-child(28) {
+  animation: snow 15s linear 14s infinite normal backwards;
+  left: 35%;
+  opacity: 0.85;
+  padding: 0.31vw;
+}
+.flake:nth-child(29) {
+  animation: snow 16s linear 47s infinite normal backwards;
+  left: 59%;
+  opacity: 0.85;
+  padding: 0.29vw;
+}
+.flake:nth-child(30) {
+  animation: snow 11s linear 48s infinite normal backwards;
+  left: 98%;
+  opacity: 0.51;
+  padding: 0.26vw;
+}
+.flake:nth-child(31) {
+  animation: snow 20s linear 7s infinite normal backwards;
+  left: 98%;
+  opacity: 0.15;
+  padding: 0.39vw;
+}
+.flake:nth-child(32) {
+  animation: snow 19s linear 44s infinite normal backwards;
+  left: 34%;
+  opacity: 0.54;
+  padding: 0.37vw;
+}
+.flake:nth-child(33) {
+  animation: snow 11s linear 8s infinite normal backwards;
+  left: 14%;
+  opacity: 1.1;
+  padding: 0.37vw;
+}
+.flake:nth-child(34) {
+  animation: snow 14s linear 28s infinite normal backwards;
+  left: 34%;
+  opacity: 0.36;
+  padding: 0.5vw;
+}
+.flake:nth-child(35) {
+  animation: snow 16s linear 21s infinite normal backwards;
+  left: 87%;
+  opacity: 0.72;
+  padding: 0.19vw;
+}
+.flake:nth-child(36) {
+  animation: snow 17s linear 18s infinite normal backwards;
+  left: 58%;
+  opacity: 0.48;
+  padding: 0.34vw;
+}
+.flake:nth-child(37) {
+  animation: snow 11s linear 49s infinite normal backwards;
+  left: 35%;
+  opacity: 0.42;
+  padding: 0.48vw;
+}
+.flake:nth-child(38) {
+  animation: snow 13s linear 29s infinite normal backwards;
+  left: 8%;
+  opacity: 0.96;
+  padding: 0.5vw;
+}
+.flake:nth-child(39) {
+  animation: snow 15s linear 43s infinite normal backwards;
+  left: 36%;
+  opacity: 0.41;
+  padding: 0.24vw;
+}
+.flake:nth-child(40) {
+  animation: snow 13s linear 46s infinite normal backwards;
+  left: 18%;
+  opacity: 0.13;
+  padding: 0.15vw;
+}
+.flake:nth-child(41) {
+  animation: snow 14s linear 22s infinite normal backwards;
+  left: 34%;
+  opacity: 0.86;
+  padding: 0.46vw;
+}
+.flake:nth-child(42) {
+  animation: snow 19s linear 3s infinite normal backwards;
+  left: 66%;
+  opacity: 0.82;
+  padding: 0.11vw;
+}
+.flake:nth-child(43) {
+  animation: snow 15s linear 46s infinite normal backwards;
+  left: 75%;
+  opacity: 0.69;
+  padding: 0.26vw;
+}
+.flake:nth-child(44) {
+  animation: snow 14s linear 12s infinite normal backwards;
+  left: 55%;
+  opacity: 0.33;
+  padding: 0.39vw;
+}
+.flake:nth-child(45) {
+  animation: snow 16s linear 33s infinite normal backwards;
+  left: 95%;
+  opacity: 0.19;
+  padding: 0.47vw;
+}
+.flake:nth-child(46) {
+  animation: snow 16s linear 15s infinite normal backwards;
+  left: 72%;
+  opacity: 0.2;
+  padding: 0.48vw;
+}
+.flake:nth-child(47) {
+  animation: snow 16s linear 8s infinite normal backwards;
+  left: 61%;
+  opacity: 0.39;
+  padding: 0.49vw;
+}
+.flake:nth-child(48) {
+  animation: snow 12s linear 21s infinite normal backwards;
+  left: 15%;
+  opacity: 0.29;
+  padding: 0.42vw;
+}
+.flake:nth-child(49) {
+  animation: snow 17s linear 26s infinite normal backwards;
+  left: 16%;
+  opacity: 0.52;
+  padding: 0.45vw;
+}
+.flake:nth-child(50) {
+  animation: snow 11s linear 42s infinite normal backwards;
+  left: 67%;
+  opacity: 1.01;
+  padding: 0.16vw;
+}
+.flake:nth-child(51) {
+  animation: snow 11s linear 29s infinite normal backwards;
+  left: 58%;
+  opacity: 0.16;
+  padding: 0.3vw;
+}
+.flake:nth-child(52) {
+  animation: snow 14s linear 33s infinite normal backwards;
+  left: 85%;
+  opacity: 1.04;
+  padding: 0.2vw;
+}
+.flake:nth-child(53) {
+  animation: snow 14s linear 10s infinite normal backwards;
+  left: 15%;
+  opacity: 0.92;
+  padding: 0.35vw;
+}
+.flake:nth-child(54) {
+  animation: snow 17s linear 44s infinite normal backwards;
+  left: 88%;
+  opacity: 0.29;
+  padding: 0.25vw;
+}
+.flake:nth-child(55) {
+  animation: snow 17s linear 20s infinite normal backwards;
+  left: 55%;
+  opacity: 0.27;
+  padding: 0.26vw;
+}
+.flake:nth-child(56) {
+  animation: snow 15s linear 27s infinite normal backwards;
+  left: 97%;
+  opacity: 0.99;
+  padding: 0.33vw;
+}
+.flake:nth-child(57) {
+  animation: snow 13s linear 31s infinite normal backwards;
+  left: 72%;
+  opacity: 1.1;
+  padding: 0.13vw;
+}
+.flake:nth-child(58) {
+  animation: snow 11s linear 6s infinite normal backwards;
+  left: 69%;
+  opacity: 0.99;
+  padding: 0.15vw;
+}
+.flake:nth-child(59) {
+  animation: snow 11s linear 23s infinite normal backwards;
+  left: 46%;
+  opacity: 0.9;
+  padding: 0.19vw;
+}
+.flake:nth-child(60) {
+  animation: snow 19s linear 16s infinite normal backwards;
+  left: 34%;
+  opacity: 1.08;
+  padding: 0.15vw;
+}
+.flake:nth-child(61) {
+  animation: snow 17s linear 21s infinite normal backwards;
+  left: 4%;
+  opacity: 1.04;
+  padding: 0.43vw;
+}
+.flake:nth-child(62) {
+  animation: snow 18s linear 3s infinite normal backwards;
+  left: 80%;
+  opacity: 0.26;
+  padding: 0.16vw;
+}
+.flake:nth-child(63) {
+  animation: snow 12s linear 34s infinite normal backwards;
+  left: 19%;
+  opacity: 0.9;
+  padding: 0.36vw;
+}
+.flake:nth-child(64) {
+  animation: snow 17s linear 7s infinite normal backwards;
+  left: 69%;
+  opacity: 0.63;
+  padding: 0.29vw;
+}
+.flake:nth-child(65) {
+  animation: snow 15s linear 36s infinite normal backwards;
+  left: 20%;
+  opacity: 0.16;
+  padding: 0.49vw;
+}
+.flake:nth-child(66) {
+  animation: snow 12s linear 6s infinite normal backwards;
+  left: 29%;
+  opacity: 0.81;
+  padding: 0.45vw;
+}
+.flake:nth-child(67) {
+  animation: snow 14s linear 22s infinite normal backwards;
+  left: 2%;
+  opacity: 0.69;
+  padding: 0.47vw;
+}
+.flake:nth-child(68) {
+  animation: snow 16s linear 41s infinite normal backwards;
+  left: 8%;
+  opacity: 0.44;
+  padding: 0.2vw;
+}
+.flake:nth-child(69) {
+  animation: snow 18s linear 5s infinite normal backwards;
+  left: 14%;
+  opacity: 0.79;
+  padding: 0.22vw;
+}
+.flake:nth-child(70) {
+  animation: snow 20s linear 12s infinite normal backwards;
+  left: 25%;
+  opacity: 0.23;
+  padding: 0.49vw;
+}
+.flake:nth-child(71) {
+  animation: snow 20s linear 32s infinite normal backwards;
+  left: 43%;
+  opacity: 0.65;
+  padding: 0.23vw;
+}
+.flake:nth-child(72) {
+  animation: snow 15s linear 3s infinite normal backwards;
+  left: 25%;
+  opacity: 0.42;
+  padding: 0.29vw;
+}
+.flake:nth-child(73) {
+  animation: snow 16s linear 20s infinite normal backwards;
+  left: 9%;
+  opacity: 1.01;
+  padding: 0.24vw;
+}
+.flake:nth-child(74) {
+  animation: snow 12s linear 26s infinite normal backwards;
+  left: 64%;
+  opacity: 0.55;
+  padding: 0.43vw;
+}
+.flake:nth-child(75) {
+  animation: snow 19s linear 17s infinite normal backwards;
+  left: 85%;
+  opacity: 1.08;
+  padding: 0.27vw;
+}
+.flake:nth-child(76) {
+  animation: snow 18s linear 3s infinite normal backwards;
+  left: 100%;
+  opacity: 0.63;
+  padding: 0.18vw;
+}
+.flake:nth-child(77) {
+  animation: snow 14s linear 19s infinite normal backwards;
+  left: 98%;
+  opacity: 0.35;
+  padding: 0.14vw;
+}
+.flake:nth-child(78) {
+  animation: snow 13s linear 3s infinite normal backwards;
+  left: 79%;
+  opacity: 0.25;
+  padding: 0.14vw;
+}
+.flake:nth-child(79) {
+  animation: snow 18s linear 28s infinite normal backwards;
+  left: 72%;
+  opacity: 0.49;
+  padding: 0.48vw;
+}
+.flake:nth-child(80) {
+  animation: snow 19s linear 3s infinite normal backwards;
+  left: 79%;
+  opacity: 0.19;
+  padding: 0.35vw;
+}
+.flake:nth-child(81) {
+  animation: snow 13s linear 48s infinite normal backwards;
+  left: 14%;
+  opacity: 0.66;
+  padding: 0.48vw;
+}
+.flake:nth-child(82) {
+  animation: snow 15s linear 1s infinite normal backwards;
+  left: 3%;
+  opacity: 0.72;
+  padding: 0.34vw;
+}
+.flake:nth-child(83) {
+  animation: snow 15s linear 36s infinite normal backwards;
+  left: 42%;
+  opacity: 1.08;
+  padding: 0.26vw;
+}
+.flake:nth-child(84) {
+  animation: snow 14s linear 15s infinite normal backwards;
+  left: 98%;
+  opacity: 0.41;
+  padding: 0.17vw;
+}
+.flake:nth-child(85) {
+  animation: snow 18s linear 20s infinite normal backwards;
+  left: 99%;
+  opacity: 0.86;
+  padding: 0.32vw;
+}
+.flake:nth-child(86) {
+  animation: snow 20s linear 14s infinite normal backwards;
+  left: 43%;
+  opacity: 0.27;
+  padding: 0.3vw;
+}
+.flake:nth-child(87) {
+  animation: snow 14s linear 44s infinite normal backwards;
+  left: 64%;
+  opacity: 0.83;
+  padding: 0.19vw;
+}
+.flake:nth-child(88) {
+  animation: snow 16s linear 24s infinite normal backwards;
+  left: 11%;
+  opacity: 0.83;
+  padding: 0.48vw;
+}
+.flake:nth-child(89) {
+  animation: snow 13s linear 24s infinite normal backwards;
+  left: 62%;
+  opacity: 0.26;
+  padding: 0.11vw;
+}
+.flake:nth-child(90) {
+  animation: snow 18s linear 44s infinite normal backwards;
+  left: 72%;
+  opacity: 0.92;
+  padding: 0.13vw;
+}
+.flake:nth-child(91) {
+  animation: snow 13s linear 20s infinite normal backwards;
+  left: 72%;
+  opacity: 0.71;
+  padding: 0.31vw;
+}
+.flake:nth-child(92) {
+  animation: snow 20s linear 14s infinite normal backwards;
+  left: 80%;
+  opacity: 0.69;
+  padding: 0.38vw;
+}
+.flake:nth-child(93) {
+  animation: snow 11s linear 21s infinite normal backwards;
+  left: 47%;
+  opacity: 1.01;
+  padding: 0.48vw;
+}
+.flake:nth-child(94) {
+  animation: snow 15s linear 35s infinite normal backwards;
+  left: 51%;
+  opacity: 0.85;
+  padding: 0.32vw;
+}
+.flake:nth-child(95) {
+  animation: snow 11s linear 47s infinite normal backwards;
+  left: 85%;
+  opacity: 0.97;
+  padding: 0.29vw;
+}
+.flake:nth-child(96) {
+  animation: snow 18s linear 37s infinite normal backwards;
+  left: 54%;
+  opacity: 0.25;
+  padding: 0.45vw;
+}
+.flake:nth-child(97) {
+  animation: snow 17s linear 39s infinite normal backwards;
+  left: 15%;
+  opacity: 0.35;
+  padding: 0.26vw;
+}
+.flake:nth-child(98) {
+  animation: snow 15s linear 5s infinite normal backwards;
+  left: 61%;
+  opacity: 0.37;
+  padding: 0.21vw;
+}
+.flake:nth-child(99) {
+  animation: snow 11s linear 2s infinite normal backwards;
+  left: 8%;
+  opacity: 0.32;
+  padding: 0.42vw;
+}
+.flake:nth-child(100) {
+  animation: snow 15s linear 19s infinite normal backwards;
+  left: 31%;
+  opacity: 0.85;
+  padding: 0.5vw;
+}
+.flake:nth-child(101) {
+  animation: snow 13s linear 14s infinite normal backwards;
+  left: 19%;
+  opacity: 0.62;
+  padding: 0.32vw;
+}
+.flake:nth-child(102) {
+  animation: snow 20s linear 42s infinite normal backwards;
+  left: 76%;
+  opacity: 0.87;
+  padding: 0.31vw;
+}
+.flake:nth-child(103) {
+  animation: snow 15s linear 41s infinite normal backwards;
+  left: 49%;
+  opacity: 0.37;
+  padding: 0.25vw;
+}
+.flake:nth-child(104) {
+  animation: snow 14s linear 42s infinite normal backwards;
+  left: 80%;
+  opacity: 0.91;
+  padding: 0.11vw;
+}
+.flake:nth-child(105) {
+  animation: snow 19s linear 48s infinite normal backwards;
+  left: 78%;
+  opacity: 0.99;
+  padding: 0.49vw;
+}
+.flake:nth-child(106) {
+  animation: snow 14s linear 11s infinite normal backwards;
+  left: 40%;
+  opacity: 1.09;
+  padding: 0.22vw;
+}
+.flake:nth-child(107) {
+  animation: snow 15s linear 42s infinite normal backwards;
+  left: 67%;
+  opacity: 1.07;
+  padding: 0.47vw;
+}
+.flake:nth-child(108) {
+  animation: snow 12s linear 28s infinite normal backwards;
+  left: 36%;
+  opacity: 0.58;
+  padding: 0.37vw;
+}
+.flake:nth-child(109) {
+  animation: snow 15s linear 33s infinite normal backwards;
+  left: 92%;
+  opacity: 0.68;
+  padding: 0.49vw;
+}
+.flake:nth-child(110) {
+  animation: snow 16s linear 5s infinite normal backwards;
+  left: 42%;
+  opacity: 0.47;
+  padding: 0.46vw;
+}
+.flake:nth-child(111) {
+  animation: snow 20s linear 24s infinite normal backwards;
+  left: 17%;
+  opacity: 0.62;
+  padding: 0.43vw;
+}
+.flake:nth-child(112) {
+  animation: snow 13s linear 1s infinite normal backwards;
+  left: 9%;
+  opacity: 0.55;
+  padding: 0.21vw;
+}
+.flake:nth-child(113) {
+  animation: snow 12s linear 22s infinite normal backwards;
+  left: 20%;
+  opacity: 0.33;
+  padding: 0.27vw;
+}
+.flake:nth-child(114) {
+  animation: snow 20s linear 36s infinite normal backwards;
+  left: 16%;
+  opacity: 0.28;
+  padding: 0.12vw;
+}
+.flake:nth-child(115) {
+  animation: snow 15s linear 6s infinite normal backwards;
+  left: 39%;
+  opacity: 0.13;
+  padding: 0.31vw;
+}
+.flake:nth-child(116) {
+  animation: snow 20s linear 35s infinite normal backwards;
+  left: 62%;
+  opacity: 0.21;
+  padding: 0.46vw;
+}
+.flake:nth-child(117) {
+  animation: snow 12s linear 14s infinite normal backwards;
+  left: 63%;
+  opacity: 0.14;
+  padding: 0.34vw;
+}
+.flake:nth-child(118) {
+  animation: snow 18s linear 14s infinite normal backwards;
+  left: 49%;
+  opacity: 0.85;
+  padding: 0.11vw;
+}
+.flake:nth-child(119) {
+  animation: snow 16s linear 27s infinite normal backwards;
+  left: 85%;
+  opacity: 0.78;
+  padding: 0.4vw;
+}
+.flake:nth-child(120) {
+  animation: snow 13s linear 27s infinite normal backwards;
+  left: 64%;
+  opacity: 0.18;
+  padding: 0.19vw;
+}
+.flake:nth-child(121) {
+  animation: snow 19s linear 4s infinite normal backwards;
+  left: 35%;
+  opacity: 0.32;
+  padding: 0.14vw;
+}
+.flake:nth-child(122) {
+  animation: snow 18s linear 50s infinite normal backwards;
+  left: 35%;
+  opacity: 1.02;
+  padding: 0.38vw;
+}
+.flake:nth-child(123) {
+  animation: snow 12s linear 7s infinite normal backwards;
+  left: 16%;
+  opacity: 1.1;
+  padding: 0.42vw;
+}
+.flake:nth-child(124) {
+  animation: snow 16s linear 15s infinite normal backwards;
+  left: 10%;
+  opacity: 0.25;
+  padding: 0.19vw;
+}
+.flake:nth-child(125) {
+  animation: snow 20s linear 12s infinite normal backwards;
+  left: 71%;
+  opacity: 0.64;
+  padding: 0.37vw;
+}
+.flake:nth-child(126) {
+  animation: snow 15s linear 14s infinite normal backwards;
+  left: 33%;
+  opacity: 0.39;
+  padding: 0.25vw;
+}
+.flake:nth-child(127) {
+  animation: snow 18s linear 36s infinite normal backwards;
+  left: 44%;
+  opacity: 0.38;
+  padding: 0.5vw;
+}
+.flake:nth-child(128) {
+  animation: snow 16s linear 4s infinite normal backwards;
+  left: 40%;
+  opacity: 0.61;
+  padding: 0.4vw;
+}
+.flake:nth-child(129) {
+  animation: snow 11s linear 5s infinite normal backwards;
+  left: 81%;
+  opacity: 0.53;
+  padding: 0.2vw;
+}
+.flake:nth-child(130) {
+  animation: snow 15s linear 14s infinite normal backwards;
+  left: 44%;
+  opacity: 0.9;
+  padding: 0.37vw;
+}
+.flake:nth-child(131) {
+  animation: snow 16s linear 7s infinite normal backwards;
+  left: 68%;
+  opacity: 0.47;
+  padding: 0.38vw;
+}
+.flake:nth-child(132) {
+  animation: snow 15s linear 36s infinite normal backwards;
+  left: 99%;
+  opacity: 0.46;
+  padding: 0.36vw;
+}
+.flake:nth-child(133) {
+  animation: snow 13s linear 25s infinite normal backwards;
+  left: 8%;
+  opacity: 0.64;
+  padding: 0.43vw;
+}
+.flake:nth-child(134) {
+  animation: snow 19s linear 38s infinite normal backwards;
+  left: 71%;
+  opacity: 0.97;
+  padding: 0.35vw;
+}
+.flake:nth-child(135) {
+  animation: snow 20s linear 48s infinite normal backwards;
+  left: 96%;
+  opacity: 1;
+  padding: 0.29vw;
+}
+.flake:nth-child(136) {
+  animation: snow 13s linear 42s infinite normal backwards;
+  left: 17%;
+  opacity: 0.91;
+  padding: 0.42vw;
+}
+.flake:nth-child(137) {
+  animation: snow 16s linear 41s infinite normal backwards;
+  left: 34%;
+  opacity: 0.94;
+  padding: 0.28vw;
+}
+.flake:nth-child(138) {
+  animation: snow 18s linear 22s infinite normal backwards;
+  left: 82%;
+  opacity: 0.27;
+  padding: 0.38vw;
+}
+.flake:nth-child(139) {
+  animation: snow 13s linear 22s infinite normal backwards;
+  left: 51%;
+  opacity: 0.43;
+  padding: 0.5vw;
+}
+.flake:nth-child(140) {
+  animation: snow 19s linear 22s infinite normal backwards;
+  left: 54%;
+  opacity: 0.89;
+  padding: 0.41vw;
+}
+.flake:nth-child(141) {
+  animation: snow 16s linear 31s infinite normal backwards;
+  left: 54%;
+  opacity: 0.46;
+  padding: 0.12vw;
+}
+.flake:nth-child(142) {
+  animation: snow 11s linear 49s infinite normal backwards;
+  left: 2%;
+  opacity: 0.75;
+  padding: 0.29vw;
+}
+.flake:nth-child(143) {
+  animation: snow 15s linear 1s infinite normal backwards;
+  left: 63%;
+  opacity: 0.3;
+  padding: 0.29vw;
+}
+.flake:nth-child(144) {
+  animation: snow 18s linear 26s infinite normal backwards;
+  left: 46%;
+  opacity: 0.98;
+  padding: 0.43vw;
+}
+.flake:nth-child(145) {
+  animation: snow 12s linear 29s infinite normal backwards;
+  left: 87%;
+  opacity: 0.31;
+  padding: 0.33vw;
+}
+.flake:nth-child(146) {
+  animation: snow 16s linear 1s infinite normal backwards;
+  left: 37%;
+  opacity: 0.42;
+  padding: 0.13vw;
+}
+.flake:nth-child(147) {
+  animation: snow 17s linear 45s infinite normal backwards;
+  left: 38%;
+  opacity: 0.3;
+  padding: 0.44vw;
+}
+.flake:nth-child(148) {
+  animation: snow 19s linear 35s infinite normal backwards;
+  left: 65%;
+  opacity: 0.77;
+  padding: 0.21vw;
+}
+.flake:nth-child(149) {
+  animation: snow 16s linear 18s infinite normal backwards;
+  left: 43%;
+  opacity: 0.14;
+  padding: 0.37vw;
+}
+.flake:nth-child(150) {
+  animation: snow 14s linear 26s infinite normal backwards;
+  left: 46%;
+  opacity: 0.5;
+  padding: 0.5vw;
+}
+@keyframes snow {
+  4% {
+    transform: translate(0.4vw, 4vh);
+  }
+  8% {
+    transform: translate(-0.2vw, 8vh);
+  }
+  12% {
+    transform: translate(0.4vw, 12vh);
+  }
+  16% {
+    transform: translate(0.4vw, 16vh);
+  }
+  20% {
+    transform: translate(-0.4vw, 20vh);
+  }
+  24% {
+    transform: translate(0.4vw, 24vh);
+  }
+  28% {
+    transform: translate(-0.2vw, 28vh);
+  }
+  32% {
+    transform: translate(0.4vw, 32vh);
+  }
+  36% {
+    transform: translate(0.4vw, 36vh);
+  }
+  40% {
+    transform: translate(-0.4vw, 40vh);
+  }
+  44% {
+    transform: translate(0.4vw, 44vh);
+  }
+  48% {
+    transform: translate(-0.2vw, 48vh);
+  }
+  52% {
+    transform: translate(0.4vw, 52vh);
+  }
+  56% {
+    transform: translate(0.4vw, 56vh);
+  }
+  60% {
+    transform: translate(-0.4vw, 60vh);
+  }
+  64% {
+    transform: translate(0.4vw, 64vh);
+  }
+  68% {
+    transform: translate(-0.2vw, 68vh);
+  }
+  72% {
+    transform: translate(0.4vw, 72vh);
+  }
+  76% {
+    transform: translate(0.4vw, 76vh);
+  }
+  80% {
+    transform: translate(-0.4vw, 80vh);
+  }
+  84% {
+    transform: translate(0.4vw, 84vh);
+  }
+  88% {
+    transform: translate(-0.2vw, 88vh);
+  }
+  92% {
+    transform: translate(0.4vw, 92vh);
+  }
+  96% {
+    transform: translate(0.4vw, 96vh);
+  }
+  100% {
+    transform: translate(-0.4vw, 100vh);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* End of Snowfall */
+
 /* Media Query */
+/* Extra Large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
 /* Laptop */
 @media (max-width: 992px) {
   html {
@@ -66,6 +1490,40 @@ body {
 
   .simply-countdown > .simply-section {
     padding: 70px;
+    background: var(--gold);
+  }
+
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
   }
 }
 
@@ -78,6 +1536,21 @@ body {
   .simply-countdown > .simply-section {
     padding: 60px;
     margin: 5px;
+    background: var(--gold);
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .timeline li .timeline-image {
+    width: 140px;
+    height: 140px;
   }
 }
 
@@ -90,5 +1563,24 @@ body {
   .simply-countdown > .simply-section {
     padding: 45px;
     margin: 3px;
+    background: var(--gold);
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 31px;
   }
 }
