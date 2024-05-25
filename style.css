@@ -1583,4 +1583,11 @@ footer li {
   .timeline li .timeline-panel::after {
     top: 31px;
   }
+
+  .home p {
+    margin-bottom: 1.3rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
 }
