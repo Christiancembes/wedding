@@ -112,7 +112,7 @@ body {
 .home h3 {
   color: #e9e0e6;
   text-shadow: var(--shadow);
-  font-size: 2rem !important;
+  font-size: 2.7rem !important;
   margin-bottom: 1rem;
   font: bold;
 }
@@ -128,6 +128,7 @@ body {
   color: white;
   text-shadow: var(--shadow);
 }
+ 
 
 .home .couple {
   margin-top: 100px;
@@ -160,60 +161,34 @@ body {
   color: var(--pink);
 }
 
-.home .container .card {
-  content: "";
-  width: 200px;
-  height: 200px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(57deg, #0a0a0a, #000000);
-  margin: auto;
-}
-.home .container .card::before {
-  container: "";
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(57deg, #0a0a0a, #e9e0e6);
-  filter: blur(50px);
-}
-.home .container .card::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home .container .card span {
-  position: absolute;
-  top: 8px;
-  bottom: 8px;
-  left: 8px;
-  right: 8px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
-}
-.home .container .card span::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .home h3 p {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
+  justify-content: center;
+}
+.home .card {
+  width: 75%;
+  height: 75%;
+  padding: 1em .2em .2em;
+  text-align: center;
+  border-radius: 2em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.home .card-img-top {
+  width: 60%;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+.home .card-body {
+  width: 100%;
+  height: 100%;
+  color: #666;
+  padding: 1rem;
+  text-align: center;
 }
 
 .info {
@@ -269,7 +244,6 @@ body {
   display: block;
 }
 
-.story span,
 .gallery span,
 .gifts span {
   text-transform: uppercase;
@@ -280,7 +254,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.story p,
 .gallery p,
 .rsvp p,
 .gifts p {
@@ -289,10 +262,43 @@ body {
 }
 
 .story h2 {
-  color: var(--bg);
+  color: #fff;
   font-family: "Sacramento";
   font-size: 5rem;
   font-weight: bold;
+}
+
+.story h3 {
+  color: #fff;
+}
+
+.story span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p {
+ font-size: 1rem;
+ font-weight: 300;
+ color: #fff;
+}
+
+.story {
+    background-image: url(img/gallery/wedding6.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
 }
 
 .timeline {
@@ -343,11 +349,11 @@ body {
 .timeline li .timeline-panel {
   width: 40%;
   float: left;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff2c;
   padding: 2rem;
   position: relative;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #ffffff2c;
 }
 
 .timeline li .timeline-panel::before {
@@ -355,8 +361,8 @@ body {
   display: inline-block;
   position: absolute;
   border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
+  border-left: 15px solid #cccccc89;
+  border-right: 0 solid #cccccc79;
   border-bottom: 15px solid transparent;
   top: 80px;
   right: -15px;
@@ -367,8 +373,8 @@ body {
   position: absolute;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
+  border-left: 14px solid #ffffff69;
+  border-right: 0 solid #ffffff65;
   border-bottom: 14px solid transparent;
   top: 81px;
   right: -13px;
@@ -1555,9 +1561,10 @@ footer li {
 }
 
 /* Mobile Phone */
-@media (max-width: 576px) {
+@media (max-width: 576px) 
   html {
     font-size: 60%;
+    margin-bottom: 3px;
   }
 
   .simply-countdown > .simply-section {
@@ -1584,10 +1591,11 @@ footer li {
     top: 31px;
   }
 
-  .home p {
-    margin-bottom: 1.3rem;
-  }
-  .home h3 {
-    font-size: 1.5rem;
+  .home h3 p {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-bottom: auto;
   }
 }
