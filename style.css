@@ -87,12 +87,14 @@ body {
 }
 
 .home {
-  background-image: url(img/background-home.png);
+  background-image: url(img/gallery/wedding1.jpg);
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
   margin-top: -6.7rem;
   padding-top: 15rem;
   padding-bottom: 5rem;
+  background-attachment: fixed;
 }
 
 .gifts h2 {
